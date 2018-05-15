@@ -1,14 +1,17 @@
 <template>
   <v-app>
     <v-content>
-      <v-tabs fixed-tabs>
-        <v-tab v-for="n in 3" :key="n">
-          Item {{ n }}
-          <span class="group pa-2">
-            <v-icon>home</v-icon>
-          </span>
+      <v-tabs icons-and-text centered dark color="grey">
+        <v-tab to='/' router>
+          Home
+          <v-icon>home</v-icon>
+        </v-tab>
+        <v-tab to='/about' router>
+          Search
+          <v-icon>search</v-icon>
         </v-tab>
       </v-tabs>
+      <router-view/>
     </v-content>
   </v-app>
 </template>
