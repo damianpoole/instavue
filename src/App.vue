@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-content>
-      <v-tabs icons-and-text centered dark color="grey">
+      <v-tabs icons-and-text centered light color="white">
         <v-tab to='/' router>
           Home
           <v-icon>home</v-icon>
