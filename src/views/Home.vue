@@ -1,6 +1,8 @@
 <template>
   <div class="home">
-    <Card/>
+    <Card 
+      imgUrl="dpool.jpg" 
+      user="Damian Poole"/>
   </div>
 </template>
 

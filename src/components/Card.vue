@@ -1,7 +1,7 @@
 <template>
     <div class="card">
-        <Usertar user="damianpoole"/>
-        <img src="../assets/dpool.jpg"/>
+        <Usertar :user="user"/>
+        <img v-bind:src="require(`../assets/${imgUrl}`)"/>
     </div>
 </template>
 
@@ -11,7 +11,8 @@ import Usertar from "@/components/Usertar.vue";
 export default {
   name: "Card",
   props: {
-    msg: String
+    user: String,
+    imgUrl: String
   },
   components: {
     Usertar
